@@ -13,7 +13,7 @@ using the function `interpret :: String -> [Int]` the program will return the ou
 $ ghci bf.hs
 *Main> interpret "+++.>++.<--."
 [3, 2, 1]
-*Main >
+*Main>
 ```
 Here the input String first increments the current cell 3 times, adds it to the output and the moves one cell to the right. Now it increments this cell by 2, adds it to the output
 and moves back to the starting cell. This cell is now decremented by 2 and added to the output.
