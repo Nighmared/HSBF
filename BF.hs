@@ -1,5 +1,3 @@
-main = putStrLn "Haskell Brainfuck fun for the whole family!"
-
 data Tape = Tape [Int] Int [Int]
 
 emptyTape :: Tape
@@ -63,3 +61,7 @@ parseChar c
 
 interpret :: [Char] -> [Int]
 interpret = run.parse
+
+main = do putStrLn "Input Brainfuck Program:"
+          prg <- getLine
+          putStrLn  $ show $ interpret prg
